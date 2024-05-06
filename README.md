@@ -8,6 +8,13 @@
   + BISHOP - Moves any number of squares diagonally.
   + KNIGHT - Moves in an ‘L-shape,’ two squares in a straight direction, and then one square perpendicular to that.
   + PAWN - Moves one square forward, but on its first move, it can move two squares forward. It captures diagonally one square forward.
+
+
+<br>
  
-
-
+Programmers            | Github Profile
+:---:                  | :---:
+Juliana R. Mancera     | [https://github.com/Julsaurus]
+Etienne V. Banquil     | [https://github.com/AintFritZ]
+Aliyah Aira A. Llana   | [https://github.com/AliyahAira]
+Jhoanna May P. Lacorte | [https://github.com/JhoannaMay]
