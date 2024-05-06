@@ -30,4 +30,3 @@ Programmers            | Github Profile
 Juliana R. Mancera     | [https://github.com/Julsaurus]
 Etienne V. Banquil     | [https://github.com/AintFritZ]
 Aliyah Aira A. Llana   | [https://github.com/AliyahAira]
-Jhoanna May P. Lacorte | [https://github.com/JhoannaMay]
