@@ -16,12 +16,12 @@ The Corgi Chess is a adaption of a traditional chess game that employs the Gener
 # GAME PROPER
 
 ## Chess Piece Move Rules 
-  + KING - Moves one square in any direction.
-  + QUEEN- Moves any number of squares diagonally, horizontally, or vertically.
-  + ROOK - Moves any number of squares horizontally or vertically.
-  + BISHOP - Moves any number of squares diagonally.
-  + KNIGHT - Moves in an ‘L-shape,’ two squares in a straight direction, and then one square perpendicular to that.
-  + PAWN - Moves one square forward, but on its first move, it can move two squares forward. It captures diagonally one square forward.
+  + **KING** - Moves one square in any direction.
+  + **QUEEN** - Moves any number of squares diagonally, horizontally, or vertically.
+  + **ROOK** - Moves any number of squares horizontally or vertically.
+  + **BISHOP** - Moves any number of squares diagonally.
+  + **KNIGHT** - Moves in an ‘L-shape,’ two squares in a straight direction, and then one square perpendicular to that.
+  + **PAWN** - Moves one square forward, but on its first move, it can move two squares forward. It captures diagonally one square forward.
 
 
 <br>
