@@ -40,13 +40,12 @@ public class GamePanel extends JPanel implements Runnable{
     boolean stalemate;
 
     public GamePanel(){
-       setPreferredSize(new Dimension(WIDTH, HEIGHT));
-       setBackground(Color.BLACK);
-       addMouseMotionListener(mouse);
-       addMouseListener(mouse);
+        setPreferredSize(new Dimension(WIDTH, HEIGHT));
+        setBackground(Color.BLACK);
+        addMouseMotionListener(mouse);
+        addMouseListener(mouse);
 
-        //setPieces();
-        testIllegal();
+        setPieces();
         copyPieces(pieces, simPieces);
     }
 
@@ -66,12 +65,12 @@ public class GamePanel extends JPanel implements Runnable{
         pieces.add(new Pawn(WHITE, 6, 6));
         pieces.add(new Pawn(WHITE, 7, 6));
         pieces.add(new Rook(WHITE, 0, 7));
-        pieces.add(new Rook(WHITE, 7, 3));
+        pieces.add(new Rook(WHITE, 7, 7));
         pieces.add(new Knight(WHITE, 1, 7));
         pieces.add(new Knight(WHITE, 6, 7));
         pieces.add(new Bishop(WHITE, 2, 7));
         pieces.add(new Bishop(WHITE, 5, 7));
-        pieces.add(new Queen(WHITE, 3, 4));
+        pieces.add(new Queen(WHITE, 3, 7));
         pieces.add(new King(WHITE, 4, 7));
 
         //Black team
@@ -91,7 +90,6 @@ public class GamePanel extends JPanel implements Runnable{
         pieces.add(new Bishop(BLACK, 5, 0));
         pieces.add(new Queen(BLACK, 3, 0));
         pieces.add(new King(BLACK, 4, 0));
-
     }
 
     public void testPromotion(){
@@ -183,9 +181,9 @@ public class GamePanel extends JPanel implements Runnable{
                         else { //game is still going
                             if(canPromote()){
                                 promotion = true;
-                         } else {
-                             changePlayer();
-                          }
+                            } else {
+                                changePlayer();
+                            }
                         }
                     }
                     else {
@@ -198,7 +196,6 @@ public class GamePanel extends JPanel implements Runnable{
             }
         }
     }
-
 
     private void simulate(){
         canMove = false;
@@ -233,7 +230,6 @@ public class GamePanel extends JPanel implements Runnable{
                 validSquare = true;
             }
         }
-
     }
 
     private boolean isIllegal(Piece king){
@@ -391,14 +387,11 @@ public class GamePanel extends JPanel implements Runnable{
                         }
                     }
                 }
-
             }
-
-
         }
-
         return true;
     }
+
     private boolean kingCanMove(Piece king){
         //simulate
         if(isValidMove(king, -1, -1)) {
@@ -427,6 +420,7 @@ public class GamePanel extends JPanel implements Runnable{
         }
         return false;
     }
+
     private boolean isValidMove(Piece king, int colPlus, int rowPlus){
         boolean isValidMove = false;
 
@@ -595,16 +589,16 @@ public class GamePanel extends JPanel implements Runnable{
         if(gameover) {
             BufferedImage image = null;
             try {
-            if (currentColor == WHITE) {
-                image = ImageIO.read(new File("D:\\Projects\\Chess\\res\\piece\\w-wins.png"));
-            } else {
-                image = ImageIO.read(new File("D:\\Projects\\Chess\\res\\piece\\b-wins.png"));
-            }
-        } catch (IOException e) {
+                if (currentColor == WHITE) {
+                    image = ImageIO.read(new File("D:\\Projects\\Chess\\res\\piece\\w-win.png"));
+                } else {
+                    image = ImageIO.read(new File("D:\\Projects\\Chess\\res\\piece\\b-win.png"));
+                }
+            } catch (IOException e) {
                 e.printStackTrace();
             }
-            int x = (1100 - image.getWidth()) / 2; // Center horizontally
-            int y = (800 - image.getHeight()) / 2; // Center vertically
+            int x = (1100 - image.getWidth()) / 2;
+            int y = (800 - image.getHeight()) / 2;
 
             g2.drawImage(image, x, y, null);
         }
@@ -616,13 +610,10 @@ public class GamePanel extends JPanel implements Runnable{
                 e.printStackTrace();
             }
 
-            // Calculate the coordinates to center the image
-            int x = (1100 - image.getWidth()) / 2; // Center horizontally
-            int y = (800 - image.getHeight()) / 2; // Center vertically
+            int x = (1100 - image.getWidth()) / 2;
+            int y = (800 - image.getHeight()) / 2;
 
             g2.drawImage(image, x, y, null);
         }
-
     }
-
 }
