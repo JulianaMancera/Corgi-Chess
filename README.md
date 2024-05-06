@@ -11,7 +11,8 @@
 
 
 <br>
-## Contributiors
+
+## Contributors
 
 Programmers            | Github Profile
 :---:                  | :---:
