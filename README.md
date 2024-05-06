@@ -1,8 +1,7 @@
 # Corgi Chess
 &emsp; Corgi Chess is a whimsical adaptation of the traditional chess game, featuring delightful cute-themed pieces and a charming 8x8 board.The objective is to checkmate the opponent's corgi king, securing victory in the realm of canine strategy. <br>
 
-![440304913_1239895314082854_4534108342273571064_n](https://github.com/Julsaurus/Corgi-Chess/assets/133284929/355225ba-1302-46a5-8021-e358f0d04b76)
-![440719045_953209022972292_8692213449451407672_n](https://github.com/Julsaurus/Corgi-Chess/assets/133284929/a70f9eb0-dae4-46ea-b544-508658c12f96)
+![Untitled (870 x 350 px)](https://github.com/Julsaurus/Corgi-Chess/assets/133284929/941b0475-72ba-475a-a728-b2fddb8dc0c6)
 
 The Corgi Chess is a adaption of a traditional chess game that employs the Generate and Test Algorithm to facilitate move generation, validation, and evaluation. 
 
