@@ -58,6 +58,7 @@ public class Piece {
         }
         return 0;
     }
+
     public void updatePosition(){
         //To check En Passant
         if(type == Type.PAWN){
@@ -65,13 +66,13 @@ public class Piece {
                 twoStepped = true;
             }
         }
-
         x = getX(col);
         y = getY(row);
         preCol = getCol(x);
         preRow = getRow(x);
         moved = true;
     }
+
     public void resetPosition(){
         col = preCol;
         row = preRow;
@@ -80,6 +81,7 @@ public class Piece {
 
 
     }
+
     public boolean canMove(int targetCol, int targetRow){
         return true;
     }
@@ -89,12 +91,14 @@ public class Piece {
         }
         return false;
     }
+
     public boolean isSameSquare(int targetCol, int targetRow){
         if(targetCol == preCol && targetRow == preRow){
             return true;
         }
         return false;
     }
+
     public Piece getHittingP(int targetCol, int targetRow){
         for(Piece piece : GamePanel.simPieces){
             if(piece.col == targetCol && piece.row == targetRow && piece != this){
@@ -103,6 +107,7 @@ public class Piece {
         }
         return null;
     }
+
     public boolean isValidSquare(int targetCol, int targetRow){
         hittingP = getHittingP(targetCol, targetRow);
         if (hittingP == null){ //square is vacant
@@ -117,6 +122,7 @@ public class Piece {
         }
         return false;
     }
+
     public boolean pieceIsOnStraightLine(int targetCol, int targetRow){
         //left
         for(int c = preCol-1; c > targetCol; c--){
@@ -156,6 +162,7 @@ public class Piece {
         }
         return false;
     }
+
     public boolean pieceIsOnDiagonalLine(int targetCol, int targetRow){
         if(targetRow < preRow){
             //up left
@@ -203,6 +210,7 @@ public class Piece {
         }
         return false;
     }
+
     public void draw(Graphics2D g2){
         g2.drawImage(image, x, y, Board.SQUARE_SIZE, Board.SQUARE_SIZE, null);
     }
