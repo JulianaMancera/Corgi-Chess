@@ -6,7 +6,7 @@
 + Find and Run the **ChessMain** class. <br> 
 
 ![image](https://github.com/Julsaurus/Corgi-Chess/assets/133284711/57625ebc-b68a-4bf0-afab-37e8444136d1)
-<br>
+<br> 
 
 ![image](https://github.com/Julsaurus/Corgi-Chess/assets/133284711/f57571b8-ef2d-49e2-aa0b-e2cb7e72bbf6)
 <br>
