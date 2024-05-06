@@ -6,7 +6,6 @@
 
 The Corgi Chess is a adaption of a traditional chess game that employs the Generate and Test Algorithm to facilitate move generation, validation, and evaluation. 
 
-<br>
 Move Generation 
  + It produces every possible move for every player based on the current setup of the board while carefully following the unique movement rules of each piece.
 Move Validation 
@@ -14,7 +13,6 @@ Move Validation
 Move Evaluation 
  + The algorithm evaluate every move's strategic value, taking into account several aspects like material gain, piece mobility, and king safety. This allows the game to make educated choices as it progresses.
 
-<br>
 
 ## Chess Piece Move Rules 
   + KING - Moves one square in any direction.
