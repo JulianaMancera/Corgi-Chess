@@ -589,12 +589,12 @@ public class GamePanel extends JPanel implements Runnable{
         if(gameover) {
             BufferedImage image = null;
             try {
-            if (currentColor == WHITE) {
-                image = ImageIO.read(new File("D:\\Projects\\Chess\\res\\piece\\w-wins.png"));
-            } else {
-                image = ImageIO.read(new File("D:\\Projects\\Chess\\res\\piece\\b-wins.png"));
-            }
-        } catch (IOException e) {
+                if (currentColor == WHITE) {
+                    image = ImageIO.read(new File("D:\\Projects\\Chess\\res\\piece\\w-win.png"));
+                } else {
+                    image = ImageIO.read(new File("D:\\Projects\\Chess\\res\\piece\\b-win.png"));
+                }
+            } catch (IOException e) {
                 e.printStackTrace();
             }
             int x = (1100 - image.getWidth()) / 2;
@@ -605,7 +605,7 @@ public class GamePanel extends JPanel implements Runnable{
         if(stalemate){
             BufferedImage image = null;
             try {
-                image = ImageIO.read(new File("D:\\Downloads\\Chess\\res\\piece\\stalemate.png"));
+                image = ImageIO.read(new File("D:\\Projects\\Chess\\res\\piece\\stalemate.png"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
